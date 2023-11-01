@@ -6,7 +6,7 @@
     <OpenSilverType>5</OpenSilverType>
     <PublishTrimmed>true</PublishTrimmed>
     <!-- Uncomment to enable AOT compilation when publishing -->
-    <!--<RunAOTCompilation>true</RunAOTCompilation>-->
+    <!--RunAOTCompilation>true</RunAOTCompilation-->
   </PropertyGroup>
 
   <ItemGroup>

@@ -67,7 +67,6 @@
   <ItemGroup>
     <Content Include="Assets\Fonts\SegoeUI-VF.ttf" />
     <Content Include="Assets\Images\backgroundimg.png" />
-    <Content Include="Assets\Images\FF1D6A98-558C-4FD1-BF51-7D582E7213F4 - Copy.png" />
     <Content Include="Assets\Images\img1.png" />
     <Content Include="Assets\Images\IMG_0437.png" />
     <Content Include="Assets\Images\IMG_0543.png" />
@@ -101,8 +100,6 @@
     <Content Include="Assets\Images\IMG_0634.png" />
     <Content Include="Assets\Images\IMG_0635.png" />
     <Content Include="Assets\Images\IMG_0636.png" />
-    <Content Include="Assets\Images\IMG_1527.png" />
-    <Content Include="Assets\Images\PXL_20220802_021548732.NIGHT.png" />
   </ItemGroup>
 
   <ItemGroup>
