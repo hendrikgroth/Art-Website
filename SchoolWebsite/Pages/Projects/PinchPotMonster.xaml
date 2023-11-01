@@ -1,0 +1,60 @@
+﻿<UserControl
+    x:Class="SchoolWebsite.Pages.Projects.PinchPotMonster"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:root="clr-namespace:SchoolWebsite"
+    xmlns:local="clr-namespace:SchoolWebsite.Pages.Projects">
+
+    <Border Background="White" CornerRadius="25">
+        <Grid Margin="25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border CornerRadius="15" MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" x:Name="mb">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.ColumnSpan="10" Source="/Assets/Images/IMG_0543.png" x:Name="img1"/>
+                    <Button Margin="5" Grid.Column="9" x:Name="b1" Visibility="Collapsed" MinHeight="0.6" Click="b1_Click" MouseEnter="b1_MouseEnter" MouseLeave="b1_MouseLeave">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border Margin="5" CornerRadius="7.5">
+                                    <Border.Background>
+                                        <SolidColorBrush Color="White" Opacity="{TemplateBinding MinHeight}" x:Name="scb1"/>
+                                    </Border.Background>
+                                    <TextBlock Text="&gt;" FontFamily="{StaticResource SegoeUI}" TextWrapping="Wrap" Margin="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Margin="5" Grid.Column="0" x:Name="b2" Visibility="Collapsed" MinHeight="0.6" Click="b2_Click" MouseEnter="b1_MouseEnter" MouseLeave="b1_MouseLeave">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border Margin="5" CornerRadius="7.5" Visibility="Visible">
+                                    <Border.Background>
+                                        <SolidColorBrush Color="White" Opacity="{TemplateBinding MinHeight}" x:Name="scb2"/>
+                                    </Border.Background>
+                                    <TextBlock Text="&lt;" FontFamily="{StaticResource SegoeUI}" TextWrapping="Wrap" Margin="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+            </Border>
+            <ScrollViewer Margin="10,0,0,0" Grid.Column="1" VerticalScrollBarVisibility="Auto" BorderThickness="0">
+                <TextBlock Text="This is temporary text." FontFamily="{StaticResource SegoeUI}" TextWrapping="Wrap" Margin="0" FontSize="24" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </ScrollViewer>
+        </Grid>
+    </Border>
+</UserControl>

@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="SchoolWebsite.Pages.Ceramics1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:SchoolWebsite.Pages">
+
+    <ScrollViewer>
+        <WrapPanel Margin="50,250,50,50">
+            <WrapPanel.Resources>
+                <Style x:Key="imgbtn" TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="25">
+                                    <Border.Background>
+                                        <ImageBrush ImageSource="{TemplateBinding Tag}" Stretch="UniformToFill"/>
+                                    </Border.Background>
+                                    <Grid Opacity="{TemplateBinding MinHeight}">
+                                        <Border CornerRadius="25" Background="#ff000000" Opacity="0.6" Name="b"/>
+                                        <TextBlock Text="{TemplateBinding Content}" FontFamily="{StaticResource SegoeUI}" Margin="25" TextWrapping="Wrap" Foreground="White" FontWeight="Bold" FontSize="32" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    </Grid>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Margin" Value="0,0,20,20"/>
+                    <Setter Property="Height" Value="300"/>
+                    <Setter Property="Width" Value="300"/>
+                </Style>
+            </WrapPanel.Resources>
+
+            <Button Content="Pinch Pot Monster" Style="{StaticResource imgbtn}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click">
+                <Button.Tag>
+                    <ImageSource>/Assets/Images/IMG_0597.png</ImageSource>
+                </Button.Tag>
+            </Button>
+            <Button Content="Coil Pot" Style="{StaticResource imgbtn}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_1">
+                <Button.Tag>
+                    <ImageSource>/Assets/Images/IMG_0628.png</ImageSource>
+                </Button.Tag>
+            </Button>
+            <Button Content="Architecture Slab Project" Style="{StaticResource imgbtn}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_2">
+                <Button.Tag>
+                    <ImageSource>/Assets/Images/IMG_0564.png</ImageSource>
+                </Button.Tag>
+            </Button>
+            <Button Content="Tripod Mug" Style="{StaticResource imgbtn}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_3">
+                <Button.Tag>
+                    <ImageSource>/Assets/Images/IMG_0587.png</ImageSource>
+                </Button.Tag>
+            </Button>
+            <Button Content="Wheel Thrown Pots" Style="{StaticResource imgbtn}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_4">
+                <Button.Tag>
+                    <ImageSource>/Assets/Images/IMG_0630.png</ImageSource>
+                </Button.Tag>
+            </Button>
+            <Button Content="Korean Water Dropper" Style="{StaticResource imgbtn}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_5">
+                <Button.Tag>
+                    <ImageSource>/Assets/Images/IMG_0617.png</ImageSource>
+                </Button.Tag>
+            </Button>
+        </WrapPanel>
+    </ScrollViewer>
+</Page>

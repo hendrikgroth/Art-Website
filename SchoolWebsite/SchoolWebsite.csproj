@@ -1,0 +1,145 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <DefineSilverlight>true</DefineSilverlight>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\About.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Ceramics1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Projects\CoilPot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Projects\KoreanWaterDropper.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Projects\PinchPotMonster.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Drawing1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\HomePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Projects\SlabProject.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Projects\TripodMug.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Projects\WheelThrownPots.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="App.xaml.cs" />
+    <Compile Include="MainPage.xaml.cs" />
+    <Compile Include="Pages\About.xaml.cs" />
+    <Compile Include="Pages\Ceramics1.xaml.cs" />
+    <Compile Include="Pages\Projects\CoilPot.xaml.cs" />
+    <Compile Include="Pages\Projects\KoreanWaterDropper.xaml.cs" />
+    <Compile Include="Pages\Projects\PinchPotMonster.xaml.cs" />
+    <Compile Include="Pages\Drawing1.xaml.cs" />
+    <Compile Include="Pages\HomePage.xaml.cs" />
+    <Compile Include="Pages\Projects\SlabProject.xaml.cs" />
+    <Compile Include="Pages\Projects\TripodMug.xaml.cs" />
+    <Compile Include="Pages\Projects\WheelThrownPots.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Fonts\SegoeUI-VF.ttf" />
+    <Content Include="Assets\Images\backgroundimg.png" />
+    <Content Include="Assets\Images\FF1D6A98-558C-4FD1-BF51-7D582E7213F4 - Copy.png" />
+    <Content Include="Assets\Images\img1.png" />
+    <Content Include="Assets\Images\IMG_0437.png" />
+    <Content Include="Assets\Images\IMG_0543.png" />
+    <Content Include="Assets\Images\IMG_0544.png" />
+    <Content Include="Assets\Images\IMG_0545.png" />
+    <Content Include="Assets\Images\IMG_0549.png" />
+    <Content Include="Assets\Images\IMG_0550.png" />
+    <Content Include="Assets\Images\IMG_0551.png" />
+    <Content Include="Assets\Images\IMG_0563.png" />
+    <Content Include="Assets\Images\IMG_0564.png" />
+    <Content Include="Assets\Images\IMG_0565.png" />
+    <Content Include="Assets\Images\IMG_0587.png" />
+    <Content Include="Assets\Images\IMG_0588.png" />
+    <Content Include="Assets\Images\IMG_0589.png" />
+    <Content Include="Assets\Images\IMG_0595.png" />
+    <Content Include="Assets\Images\IMG_0596.png" />
+    <Content Include="Assets\Images\IMG_0597.png" />
+    <Content Include="Assets\Images\IMG_0598.png" />
+    <Content Include="Assets\Images\IMG_0599.png" />
+    <Content Include="Assets\Images\IMG_0609.png" />
+    <Content Include="Assets\Images\IMG_0610.png" />
+    <Content Include="Assets\Images\IMG_0611.png" />
+    <Content Include="Assets\Images\IMG_0617.png" />
+    <Content Include="Assets\Images\IMG_0618.png" />
+    <Content Include="Assets\Images\IMG_0619.png" />
+    <Content Include="Assets\Images\IMG_0627.png" />
+    <Content Include="Assets\Images\IMG_0628.png" />
+    <Content Include="Assets\Images\IMG_0629.png" />
+    <Content Include="Assets\Images\IMG_0630.png" />
+    <Content Include="Assets\Images\IMG_0631.png" />
+    <Content Include="Assets\Images\IMG_1527.png" />
+    <Content Include="Assets\Images\PXL_20220802_021548732.NIGHT.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\HomePage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Ceramics1.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Drawing1.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\About.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Projects\PinchPotMonster.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Projects\CoilPot.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Projects\SlabProject.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Projects\TripodMug.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Projects\WheelThrownPots.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Projects\KoreanWaterDropper.xaml" />
+  </ItemGroup>
+
+</Project>
