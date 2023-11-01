@@ -1,7 +1,7 @@
 ﻿function onResourceLoaded(resourceIndex, totalResourceCount) {
     let percentage = document.getElementById("loading-indicator-percentage");
     if (percentage) {
-        percentage.innerHTML = Math.round((resourceIndex / totalResourceCount) * 100) + "%";
+        percentage.innerHTML = "This may take a while";
     }
 }
 

@@ -3,8 +3,19 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:SchoolWebsite.Pages">
-    
-    <Grid>
 
+    <Grid Margin="50,50,50,50">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Border CornerRadius="20" Margin="0,200,0,0">
+            <Border.Background>
+                <ImageBrush ImageSource="/Assets/Images/IMG_0437.png" Stretch="UniformToFill"/>
+            </Border.Background>
+        </Border>
+        <TextBlock Grid.Column="1" FontFamily="{StaticResource SegoeUI}" Margin="50,250,50,50" TextWrapping="Wrap" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center">
+Hello, my name is Hendrik, I have taken 2 art classes so far; Drawing 1 and Ceramics 1. I love to travel and some of my art is inspired by those places I visit. My hobbies include playing video games and coding, which is why I decided to code this website myself instead of using Weebly, as a strongly dislike Weebly and I felt it would give me experience in something other than the usual WPF desktop applications I usually make. I have already created desktop applications used by thousands of people, so I plan to go to college and start making money doing something I enjoy.
+        </TextBlock>
     </Grid>
 </Page>

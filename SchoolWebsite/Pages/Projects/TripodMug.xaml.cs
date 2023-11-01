@@ -8,6 +8,7 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 
 namespace SchoolWebsite.Pages.Projects
@@ -17,6 +18,61 @@ namespace SchoolWebsite.Pages.Projects
 		public TripodMug()
 		{
 			this.InitializeComponent();
+			img1.Source = images[0];
+		}
+
+		int pos = 0;
+
+		BitmapImage[] images =
+		{
+			new BitmapImage(new Uri("/Assets/Images/IMG_0587.png", UriKind.Relative)),
+			new BitmapImage(new Uri("/Assets/Images/IMG_0588.png", UriKind.Relative)),
+			new BitmapImage(new Uri("/Assets/Images/IMG_0589.png", UriKind.Relative)),
+			new BitmapImage(new Uri("/Assets/Images/IMG_0634.png", UriKind.Relative)),
+			new BitmapImage(new Uri("/Assets/Images/IMG_0635.png", UriKind.Relative)),
+			new BitmapImage(new Uri("/Assets/Images/IMG_0636.png", UriKind.Relative))
+		};
+
+		private void Border_MouseEnter(object sender, MouseEventArgs e)
+		{
+			b1.Visibility = Visibility.Visible;
+			b2.Visibility = Visibility.Visible;
+		}
+
+		private void Border_MouseLeave(object sender, MouseEventArgs e)
+		{
+			b1.Visibility = Visibility.Collapsed;
+			b2.Visibility = Visibility.Collapsed;
+		}
+
+		private void b1_Click(object sender, RoutedEventArgs e)
+		{
+			pos++;
+			if (pos >= images.Length)
+				pos = 0;
+			if (pos < 0)
+				pos = images.Length - 1;
+			img1.Source = images[pos];
+		}
+
+		private void b2_Click(object sender, RoutedEventArgs e)
+		{
+			pos--;
+			if (pos >= images.Length)
+				pos = 0;
+			if (pos < 0)
+				pos = images.Length - 1;
+			img1.Source = images[pos];
+		}
+
+		private void b1_MouseEnter(object sender, MouseEventArgs e)
+		{
+			((Button)sender).MinHeight = 0.8;
+		}
+
+		private void b1_MouseLeave(object sender, MouseEventArgs e)
+		{
+			((Button)sender).MinHeight = 0.6;
 		}
 	}
 }

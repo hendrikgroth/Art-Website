@@ -39,14 +39,14 @@
                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" VerticalAlignment="Center">
                     <RadioButton Content="Home" Style="{StaticResource RadioButton}" Checked="RadioButton_Checked"/>
                     <RadioButton Content="Ceramics 1" Style="{StaticResource RadioButton}" Checked="RadioButton_Checked_1"/>
-                    <RadioButton Content="Drawing 1" Style="{StaticResource RadioButton}" Checked="RadioButton_Checked_2"/>
+                    <!--RadioButton Content="Drawing 1" Style="{StaticResource RadioButton}" Checked="RadioButton_Checked_2"/-->
                     <RadioButton Content="About" Style="{StaticResource RadioButton}" Checked="RadioButton_Checked_3"/>
                 </StackPanel>
             </Grid>
         </Border>
         <Grid Background="#8f000000" x:Name="ppg" Visibility="Collapsed">
             <Button Opacity="0" Click="Button_Click"/>
-            <Frame Source="/Pages/Projects/PinchPotMonster.xaml" x:Name="projectpresenter" Visibility="{Binding ElementName=ppg, Path=Visibility, Mode=TwoWay}" Margin="50" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Frame Source="/Pages/Projects/PinchPotMonster.xaml" x:Name="projectpresenter" Visibility="{Binding ElementName=ppg, Path=Visibility, Mode=TwoWay}" Margin="100" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Grid>
     </Grid>
 </sdk:Page>

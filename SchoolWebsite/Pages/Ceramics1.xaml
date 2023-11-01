@@ -46,7 +46,7 @@
             </Button>
             <Button Content="Tripod Mug" Style="{StaticResource imgbtn}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_3">
                 <Button.Tag>
-                    <ImageSource>/Assets/Images/IMG_0587.png</ImageSource>
+                    <ImageSource>/Assets/Images/IMG_0634.png</ImageSource>
                 </Button.Tag>
             </Button>
             <Button Content="Wheel Thrown Pots" Style="{StaticResource imgbtn}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_4">

@@ -3,8 +3,46 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:SchoolWebsite.Pages.Projects">
-    
-    <Grid>
 
-    </Grid>
+    <Border Background="White" CornerRadius="25">
+        <Grid Margin="25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border CornerRadius="15" MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" x:Name="mb">
+                <Grid>
+                    <Image Source="/Assets/Images/IMG_0617.png" x:Name="img1"/>
+                    <Button Margin="5" x:Name="b1" Visibility="Visible" Height="50" Width="50" MinHeight="0.6" Click="b1_Click" MouseEnter="b1_MouseEnter" MouseLeave="b1_MouseLeave" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border Margin="5" CornerRadius="7.5">
+                                    <Border.Background>
+                                        <SolidColorBrush Color="White" Opacity="{TemplateBinding MinHeight}" x:Name="scb1"/>
+                                    </Border.Background>
+                                    <TextBlock Text="&gt;" FontFamily="{StaticResource SegoeUI}" TextWrapping="Wrap" Margin="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Margin="5" x:Name="b2" Visibility="Visible" Height="50" Width="50" MinHeight="0.6" Click="b2_Click" MouseEnter="b1_MouseEnter" MouseLeave="b1_MouseLeave" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border Margin="5" CornerRadius="7.5" Visibility="Visible">
+                                    <Border.Background>
+                                        <SolidColorBrush Color="White" Opacity="{TemplateBinding MinHeight}" x:Name="scb2"/>
+                                    </Border.Background>
+                                    <TextBlock Text="&lt;" FontFamily="{StaticResource SegoeUI}" TextWrapping="Wrap" Margin="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+            </Border>
+            <ScrollViewer Margin="10,0,0,0" Grid.Column="1" VerticalScrollBarVisibility="Auto" BorderThickness="0">
+                <TextBlock FontFamily="{StaticResource SegoeUI}" TextWrapping="Wrap" Margin="0" FontSize="24" VerticalAlignment="Top" HorizontalAlignment="Left">
+For this project I created a cactus, as I believed it would create an interesting and dynamic shape that also worked perfectly with a Korean water dropper because the arms would make a suitable place for a spout and with the large internal volume of the sculpture made it great for this. I started by making a huge cylinder and then texturing it to make it looks like a cactus, as the method I used to texture it would make the walls thinner so carving out the sculpture and making it hollow could cause me to make the walls far too thin. I also had to add arms and make those hollow to allow water to enter and move towards the spout I placed on the tip of one of the arms. I had to also make the spikes, so it would look like an actual cactus, and for this I made tiny, tapered coils and then blended the base of them into the sculpture, all of this makes the glaze seem almost uninteresting in comparison, as it's just a few layers of a glaze called true celadon to give it that green cactus look.                </TextBlock>
+            </ScrollViewer>
+        </Grid>
+    </Border>
 </UserControl>

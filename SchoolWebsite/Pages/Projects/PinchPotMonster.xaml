@@ -13,20 +13,8 @@
             </Grid.ColumnDefinitions>
             <Border CornerRadius="15" MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" x:Name="mb">
                 <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Image Grid.ColumnSpan="10" Source="/Assets/Images/IMG_0543.png" x:Name="img1"/>
-                    <Button Margin="5" Grid.Column="9" x:Name="b1" Visibility="Collapsed" MinHeight="0.6" Click="b1_Click" MouseEnter="b1_MouseEnter" MouseLeave="b1_MouseLeave">
+                    <Image Source="/Assets/Images/IMG_0543.png" x:Name="img1"/>
+                    <Button Margin="5" x:Name="b1" Visibility="Visible" Height="50" Width="50" MinHeight="0.6" Click="b1_Click" MouseEnter="b1_MouseEnter" MouseLeave="b1_MouseLeave" VerticalAlignment="Bottom" HorizontalAlignment="Right">
                         <Button.Template>
                             <ControlTemplate>
                                 <Border Margin="5" CornerRadius="7.5">
@@ -38,7 +26,7 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
-                    <Button Margin="5" Grid.Column="0" x:Name="b2" Visibility="Collapsed" MinHeight="0.6" Click="b2_Click" MouseEnter="b1_MouseEnter" MouseLeave="b1_MouseLeave">
+                    <Button Margin="5" x:Name="b2" Visibility="Visible" Height="50" Width="50" MinHeight="0.6" Click="b2_Click" MouseEnter="b1_MouseEnter" MouseLeave="b1_MouseLeave" VerticalAlignment="Bottom" HorizontalAlignment="Left">
                         <Button.Template>
                             <ControlTemplate>
                                 <Border Margin="5" CornerRadius="7.5" Visibility="Visible">
@@ -53,7 +41,9 @@
                 </Grid>
             </Border>
             <ScrollViewer Margin="10,0,0,0" Grid.Column="1" VerticalScrollBarVisibility="Auto" BorderThickness="0">
-                <TextBlock Text="This is temporary text." FontFamily="{StaticResource SegoeUI}" TextWrapping="Wrap" Margin="0" FontSize="24" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <TextBlock FontFamily="{StaticResource SegoeUI}" TextWrapping="Wrap" Margin="0" FontSize="24" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    For this project I took a lot of inspiration from the sea lamprey to give it an interesting shape, I also decided to add claws which make the piece more complex and interesting. The cuts across the monster help to tell a story and introduce more texture into the monster. Although the monster does not have too many features for its larger size, this helps to not distract from the most key features, specifically its mouth. Making the mouth was exceedingly difficult as it required dozens of little teeth, not only was making them difficult, but placing them was even harder. I had to score and slip them on and carefully place them with the pin tool and after used my finger to carefully press them down. The body is made of 2 pinch pots, a round one, and a long almost cone shaped pinch pot, connected by a hole in the back of the round pinch pot that serves as the monster's mouth.
+                </TextBlock>
             </ScrollViewer>
         </Grid>
     </Border>

@@ -16,9 +16,15 @@ namespace SchoolWebsite.Pages.Projects
 {
 	public partial class PinchPotMonster : UserControl
 	{
+		public PinchPotMonster()
+		{
+			this.InitializeComponent();
+			img1.Source = images[0];
+		}
+
 		int pos = 0;
 
-		BitmapImage[] images = 
+		BitmapImage[] images =
 		{
 			new BitmapImage(new Uri("/Assets/Images/IMG_0543.png", UriKind.Relative)),
 			new BitmapImage(new Uri("/Assets/Images/IMG_0544.png", UriKind.Relative)),
@@ -27,12 +33,6 @@ namespace SchoolWebsite.Pages.Projects
 			new BitmapImage(new Uri("/Assets/Images/IMG_0598.png", UriKind.Relative)),
 			new BitmapImage(new Uri("/Assets/Images/IMG_0599.png", UriKind.Relative))
 		};
-
-		public PinchPotMonster()
-		{
-			this.InitializeComponent();
-			img1.Source = images[0];
-		}
 
 		private void Border_MouseEnter(object sender, MouseEventArgs e)
 		{
